@@ -7,11 +7,10 @@ const PORT = 5000;
 
 // ✅ Middleware
 app.use(cors({
-  origin: 'https://chat-frontend-2v29.onrender.com', // Allow requests only from your frontend URL
+  origin: 'http://localhost:5173', // Allow requests only from your frontend URL
   methods: ['POST', 'GET'],
   credentials: true
 }));
-
 app.use(bodyParser.json());
 
 // ✅ Chatbot Route
